@@ -1,12 +1,6 @@
+
 @import "../../css/mixinsandfunctions.scss";
 // @import "./variables.scss";
-// @import url('https://fonts.googleapis.com/css2?family=Caramel&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Caramel&family=Philosopher&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&family=Philosopher&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-
 
 * {
   @include reset;
@@ -15,35 +9,20 @@
   box-sizing: border-box;
   font-family: Montserrat, sans-serif;
   font-weight: 400;
-}
-body{
-  background-color: #ffffd3;
-}
-h2{
-  padding-bottom:15px;
+  // color: white;
 }
 
-.bold-text{
-  font-weight: 800;
-}
-//paragraphe intro
-.intro{
-  font-size: 1.2rem;
-}
-
-.box-info-bordered-title{
-  font-size: 16px;
-  font-weight:500;
-  padding-bottom:0.3rem;
-}
-
+// body {
 #root {
   display: grid;
   grid-template-areas: " header " "main " "footer ";
   grid-template-rows: auto 1fr auto;
   height: 100vh;
+  // row-gap: 20px;
   text-align: justify;
   margin: 0;
+  padding: 0;
+
   @include media(desktop) {
     // body {
     grid-template-areas:
@@ -55,12 +34,12 @@ h2{
   }
 }
 
+
 #root > header {
   grid-area: header;
 }
 #root > main {
   grid-area: main;
-  padding:20px 2px;
 }
 
 #root > footer {
@@ -69,178 +48,196 @@ h2{
 
 
 
-.box-card {
+.box-image {
+  display: flex;
   align-items: center;
   justify-content: center;
+  align-items: stretch;
   place-self: center;
-  justify-items: center;
+  box-shadow: 3px 3px 7px 2px #4054b2;
+  // width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+@include media(tablet) {
+  .box-image {
+    // height: 500px;
+    width:auto;
+  }
+}
+
+// img{
+//   width:100%;
+//   height: 100%;
+// }
+
+h2{
+    font-size:30px;
+    // color: red;
+    // margin-top: 400px;
+}
+
+// .logo-1{
+//   // height: 123px;
+//   // essai
+//   // width: 90px;
+//   // padding: 2px;
+// margin-bottom: 6px;
+// height: 100%;
+//   // fin essai
+//   // margin-top:7px;
+//   // border-right:2px solid black;
+// }
+// .logo-not{
+//   // height:80px;
+//   // essai 
+//   // width:80px;
+//   // width: 90px;
+//   // padding:2px;
+//   padding:9px;
+//   // padding-right:10p
+//   // // fin essai
+//   // // height:100%;
+//   // padding-top:10px;
+// }
+.logo-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 100%;
+  z-index: 200;
+  // border: 2px solid black;
+  box-shadow: 4px 3px 5px black
+}
+
+.home-container{
   display: grid;
-  gap:20px;
+  // grid-template-columns: 1fr;
+  // text-shadow: 1px 1px 5px black;
+  font-weight: bold;
+ 
+
   grid-template-columns: 1fr;
   @include media(tablet) {
-      width:auto;
-    grid-template-columns: 1fr 1fr;
-    gap:40px;
-    }
+    grid-template-columns: 1fr;}
+  padding: 5px;
+  justify-items: center;
+  gap:30px;
 
+@include media(desktop) {
+  align-items: center;
+// justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  // grid-template-rows: 1fr 1fr;
+  grid-template-areas: "carte carte"
+  "carousel contact";
+
+  
 }
-.box-image-container{
-  padding: 20px 0px 0px
 }
-// ajout scss image
-.box-card img{
+.carousel-container{
+
+  align-self: center;
+
+ 
+
+  @include media(desktop) {
+  align-self: center;
+  // border-radius: 10px;
+  // padding: 20px;
+  grid-area: carousel;
+}
+}
+
+.carte {
+  grid-area:carte;
+  align-self: center;
   width:100%;
-  padding:0;
-  // height:300px;
-
-  object-fit: cover;
-  box-shadow: 3px 3px 7px 2px #4054b2;
-  border-radius: 10px;
-    @include media(tablet) {
-      width: 400px;
-   height: 300px; 
-   height:auto;
-   object-fit: contain;
-    
+  height: 100%;
+  // border-radius: 10px;
+  // width: fit-content;
+  box-shadow: 4px 3px 5px black;
+  @include media(desktop) {
+  // border-radius:25px;
 }
+}
+
+
+
+
+// .home-container{
+#root >main{
+  // text-shadow: 1px 1px 5px black;
+  width: 100%;
+  height: 100%;
+  background-color:#C7E6F4;
+
+box-shadow: 4px 3px 5px black;
+
+background-size: cover;
+background-position: center;
+@include media(desktop) {
+  // border-radius:25px;
+border-top-right-radius: 10px;
+
+}
+}
+.home-container >img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.presentation-title{
+  font-size:50px;
+  // color:black;
+  // color: white;
+  // color: #164F9D;
+  // color: #131f53;
+  margin:0;
+}
+.presentation-list{
+  // list-style-type: disc;
+  padding: 10px;
+}
+.presentation-list > li{
+padding: 10px 0px;
+
+}
+
+
+#root >main{
+  padding: 20px  15px;
+  display: grid;
+  row-gap:20px;
+  // color: yellow;
+  // color: black;
+}
+
+
+#main >p{
+  color:black;
+ 
+}
+
+.home-font{
+  @include media(desktop) {
+  grid-column: 1 / 3;
+}
+}
+
+
+#root >main >h1{
+  font-size:30px;
+  font-weight: bold;
+  // padding-bottom:40px;
+  text-align: center;
+}
+#root > main >p{
+  font-weight: bold;
 }
 
 img{
-  width:100%;
-}
-
-//positionnement des grid-container dans le #main
-
-.grid-container{
-  display: grid;
-  gap:20px;
-  grid-template-columns: 1fr;
-@include media(tablet) {
-
-//   grid-template-areas: "1" "2";
-  
-}
-}
-.grid-container .box-image >img{
-object-fit: cover;
-width:100%;
-// background-size: cover;
-}
-
-
-.grid-container{
-  display: grid;
-  gap:20px;
-  grid-template-columns: 1fr;
-@include media(tablet) {
-
-  grid-template-columns: repeat(2,1fr);
-}
-}
-.box-info{
-  place-self: center;
-  font-family: caramel cursive;
-  font-family: "Questrial", sans-serif;
-  // padding: 50px 3px;
-  padding: 20px 3px;
-  // height:17rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  @include media(tablet) {
-  height: 15rem;
-
-}
-}
-.box-info:first-child{
-  font-size: 1.2rem;
-  padding-bottom: 15px;
-  @include media(tablet) {
-    font-size: 1.5rem;
-}
-}
-  
-
-
-main{
-  row-gap: 20px;
-padding: 0px 4px; 
-}
-
-h1, h2 , h3, h4{
-  // font-family: caramel cursive;
-  font-family: 'Philosopher', sans-serif;
-}
-h2,h3{
-  font-size: 25px;
-}
-.button{
-  background-color: #131f53;
-  color:white;
-  text-decoration: none;
-  // width:130px;
-  // height:40px;
-  border-radius: 7px;
-  margin: 10px 0px;
-  text-align: center;
-  padding: 5px;
-  font-size: 0.9rem;
-  display: flex;
-    align-items: center;
-}
-
-.button-box{
-  background-color: #131f53;
-  color:white;
-  text-decoration: none;
-  width:130px;
-  height:0px;
-  border-radius: 7px;
-  margin: 10px 0px;
-  display: flex;
-  height: 40px;
-  justify-content: center;
-}
-
-
-
-
-
-.box-info{
-  // grid-column: 1;
-}
-
-
-
-//positionnement des box-infos sur la grid 
-
-//box-info 1
-#root > main > div > div:nth-child(1) > div{
-  grid-row:2;
-  @include media(tablet) {
-
-    grid-row: 1;
-    grid-column: 2;
-    // border: 2px solid red;
-}
-}
-
-  //Box-info 2
-  #root > main > div > div:nth-child(2) > div{
-  grid-row:2;
-  @include media(tablet) {
-
-    grid-row: 1;
-    grid-column: 1;
-}
-  }
-
-// Box-info 3
-#root > main > div > div:nth-child(4) > div{
-
-  @include media(tablet) {
-grid-column: 1;
-grid-row:1;
-}
 }
