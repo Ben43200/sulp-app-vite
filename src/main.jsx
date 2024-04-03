@@ -21,7 +21,7 @@ import ReactDOM from "react-dom/client";
 // import Methodologie from "./pages/Methodologie/Methodologie";
 // import Mission from "./pages/Mission/Mission";
 
-// import Footer from "./components/footer/Footer";
+import Footer from "./components/footer/Footer";
 // import ScrollToTop from "./components/ScrollToTop";
 // import Service from "./pages/Services/Services";
 // import Realisations from "./pages/Realisations";
@@ -64,7 +64,7 @@ root.render(
 
 
 </Routes>
-    {/* <Footer /> */}
+    <Footer />
 
   {/* </Router> */}
   </BrowserRouter>
