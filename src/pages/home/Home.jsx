@@ -1,5 +1,7 @@
 // import Card from "../../components/card/Card";
 // import {Cloudinary} from "@cloudinary/url-gen";
+import Carousel from "../../components/carousel/Carousel";
+// import { stockData } from "../../utils/images";
 
 
 import "./home.scss";
@@ -11,6 +13,9 @@ function Home() {
     <main>
       <p className="intro">{homeIntro}</p>
       {/* <Card /> */}
+      <div className="carousel-container">
+        <Carousel />
+      </div>
     </main>
   );
 }

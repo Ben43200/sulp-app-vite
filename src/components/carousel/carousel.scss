@@ -1,0 +1,125 @@
+@import '../../css/mixinsandfunctions.scss';
+
+.carousel {
+    aspect-ratio: 335/255;
+
+
+    // grid-area: carousel;
+    display: grid;
+    grid-template-areas:
+        'imageStart . . '
+        'arrowLeft . arrowRight'
+        '. position imageEnd';
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    // padding:15px;
+    // margin-top: auto;
+    // padding: 20px;
+    @include media(tablet) {
+        // aspect-ratio: 500/255;
+    // aspect-ratio:400/255;
+    // aspect-ratio:4/2;
+    aspect-ratio:46/25;
+
+
+
+    
+
+    }
+    @include media(desktop) {
+        // aspect-ratio: 1240/415;
+
+    aspect-ratio:400/255;
+
+        // margin-bottom: 20px;
+    }
+    & > img {
+        grid-area: imageStart / imageStart / imageEnd / imageEnd;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        // border-radius: 10px;
+  box-shadow: 4px 3px 5px black;
+
+        @include media(desktop) {
+            // border-radius: 25px;
+        }
+    }
+    & > aside {
+        // visibility: hidden;
+        visibility: visible;
+        grid-area: position;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1rem;
+        @include media(desktop) {
+            // visibility: visible;
+            // grid-area: position;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            // color: white;
+            font-size: 1.12rem;
+        }
+    }
+
+    & > span:first-of-type {
+        grid-area: arrowLeft;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    & > span:last-of-type {
+        grid-area: arrowRight;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: white;
+    }
+    .arrow-left::before {
+        font-size: 2rem;
+        // font-size: 3rem;
+        padding: 2rem;
+        font-weight: bold;
+        content: '\f053';
+        font-style: normal;
+        @include media(tablet) {
+            font-size: 4rem;
+        }
+        @include media(desktop) {
+            font-size: 5rem;
+        }
+    }
+    .arrow-right::before {
+        font-weight: bold;
+        content: '\f054';
+        font-style: normal;
+        font-size: 2rem;
+        // font-size: 3rem;
+
+        padding: 2rem;
+        @include media(tablet) {
+            font-size: 4rem;
+        }
+        @include media(desktop) {
+            font-size: 5rem;
+        }
+    }
+
+    .arrow-left {
+        display: inline-flex;
+        font-family: 'Font Awesome 5 Free';
+    }
+    .arrow-right {
+        display: inline-flex;
+        font-family: 'Font Awesome 5 Free';
+    }
+}
+
+.carousel >img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
