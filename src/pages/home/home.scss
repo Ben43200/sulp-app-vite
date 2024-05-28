@@ -169,6 +169,25 @@ h2{
 }
 }
 
+.map-container{
+  .carte {
+    grid-area: carte;
+    align-self: center;
+    width: 500px; // Largeur fixée à 500px
+    height: 600px; // Hauteur fixée à 600px
+    box-shadow: 4px 3px 5px black;
+    overflow: hidden;
+    
+    @include media(tablet) {
+      height: 275px; // Vous pouvez ajuster cette valeur si nécessaire
+    }
+  }
+}
+
+.leaflet-container {
+  width: 500px;
+  height: 600px;
+}
 
 
 
