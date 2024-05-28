@@ -63,12 +63,26 @@ export default function Carousel() {
         "https://res.cloudinary.com/dtvojwz5j/image/upload/v1712065872/udgafo6ckulygh28dy4x.webp",
     ];
     const [position, setPosition] = useState(0);
-    useEffect(() => {
-        images.forEach((image) => {
-            const img = new Image();
-            img.src = image;
-        });
-    }, [images]);
+    //laisser le useEffect pour le chargement des images pour score page speedinsight
+    // useEffect(() => {
+    //     images.forEach((image) => {
+    //         const img = new Image();
+    //         img.src = image;
+    //     });
+    // }, [images]);
+ //essai préchargement une à une
+ useEffect(() => {
+    const img1 = new Image();
+    img1.src = images[0];
+
+    const img2 = new Image();
+    img2.src = images[1];
+
+    const img3 = new Image();
+    img3.src = images[2];
+}, [images]);
+      
+    ///fin préchargement
     useEffect(() => {
         const interval = setInterval(() => {
             setPosition(prevPosition => (prevPosition + 1) % images.length);
