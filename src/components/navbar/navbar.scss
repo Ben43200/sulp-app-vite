@@ -10,24 +10,41 @@
 header {
   box-shadow: 10px 5px 5px grey;
   border-radius: 10px;
-    grid-template-rows: auto 1fr auto;
-    background-color:#c1e4f1 ;
-    //essai header
+    // grid-template-rows: auto 1fr auto;
+    // background-color:#c1e4f1 ;
+    // //essai header
 
-    top: 0px;
-    left: 0px;
-    // position: sticky;
-    position: fixed;
-    right: 0px;
-    z-index: 400;
-    @include media(tablet) {
+    // top: 0px;
+    // left: 0px;
+    // // position: sticky;
+    // position: fixed;
+    // right: 0px;
+    // z-index: 400;
+    // @include media(tablet) {
 // @media (min-width: 1240px) {
 
-      position: relative;
+      // position: relative;
     }
 
     //fin essai
+// }
+
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 50%; // Centrer l'élément horizontalement
+  transform: translateX(-50%); // Décaler l'élément de moitié à gauche pour le centrer parfaitement
+  width: 100%;
+  max-width: 1240px; // Largeur maximale de l'élément
+  z-index: 100; // Assurez-vous que le header est toujours au-dessus des autres éléments
 }
+
+
+
+
+
 
 
 .container {
@@ -36,7 +53,7 @@ header {
   padding: 0 15px;
   display: flex;
   justify-content: space-between;
-  justify-content: space-around;
+  // justify-content: space-around;
   align-items: center;
   height: 100%;
 }
@@ -322,6 +339,6 @@ h1 {
 
 .title{
   // color:red;
-  color: #c1e4f1;
+  color: white;
   // padding-top: 70px;
 }
