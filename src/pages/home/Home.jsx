@@ -31,11 +31,13 @@ function Home() {
         <img className="carte" src={Google} alt="carte" />
         </Link> */}
       {/* </div> */}
-      {/* <Card /> */}
+      {/* <Card /> */} 
+      <Link to="https://maps.app.goo.gl/UBfWP5JLSstGKZf29" target="_blank" rel="noopener noreferrer">
       <div className="map-container">
         <img className="carte" src={Carte.carte} alt="carte" />
         <img src={logo.logo1} className="logo-mini" alt="logo" />
-      </div>
+      </div></Link>
+      
       <div className="carousel-container">
         <Carousel />
       </div>
