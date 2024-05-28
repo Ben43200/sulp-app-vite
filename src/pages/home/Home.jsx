@@ -6,6 +6,7 @@ import  Google from "../../utils/google-map.png"
 import { Carte } from "../../utils/map2.js";
 // import { stockData } from "../../utils/images";
 import { useEffect } from "react";
+import { logo } from "../../utils/logo.js";
 
 
 import "./home.scss";
@@ -33,6 +34,7 @@ function Home() {
       {/* <Card /> */}
       <div className="map-container">
         <img className="carte" src={Carte.carte} alt="carte" />
+        <img src={logo.logo1} className="logo-mini" alt="logo" />
       </div>
       <div className="carousel-container">
         <Carousel />
