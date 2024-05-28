@@ -63,7 +63,12 @@ export default function Carousel() {
         "https://res.cloudinary.com/dtvojwz5j/image/upload/v1712065872/udgafo6ckulygh28dy4x.webp",
     ];
     const [position, setPosition] = useState(0);
-
+    useEffect(() => {
+        images.forEach((image) => {
+            const img = new Image();
+            img.src = image;
+        });
+    }, [images]);
     useEffect(() => {
         const interval = setInterval(() => {
             setPosition(prevPosition => (prevPosition + 1) % images.length);
