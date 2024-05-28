@@ -31,8 +31,8 @@ function Home() {
       </div>
       <div className="carousel-container">
         <Carousel />
-        <Contact />
       </div>
+      <Contact />
     </main>
   );
 }
