@@ -44,7 +44,7 @@ const Navbar = () => {
           <div className="container">
             <div className="logo-container">
             <img src={logo.logo1} className="logo-1" alt="logo" />
-            <img src={logo.logo} className="logo-1" alt="logo" />
+            <img src={logo.logo2} className="logo-1" alt="logo" />
             </div>
             <div className="menu-icon" onClick={handleShowNavbar}>
               <span className="burger-icon" ref={menuRef}>
