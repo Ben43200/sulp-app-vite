@@ -17,7 +17,7 @@
   display: grid;
   grid-template-areas: " header " "main " "footer ";
 ;
-  grid-template-rows: 160px 1fr auto;
+  grid-template-rows: 140px 1fr auto;
   height: 100vh;
   text-align: justify;
   
@@ -206,8 +206,12 @@ padding: 10px 0px;
   box-shadow: 4px 3px 5px black;
   @include media(tablet) {
     // border-radius:25px;
-    height: 409px;
-    width:500px;
+    // height: 409px;
+   
+    // width:500px;
+//essai nouvelle taille
+height:370px;
+width: 450px;
   }
 }
 .carte{
@@ -215,8 +219,11 @@ padding: 10px 0px;
  width: 100%;
  @include media(tablet) {
   // border-radius:25px;
-  height: 409px;
-  width:500px;
+  // height: 409px;
+  // width:500px;
+  //essai nouvelle taille
+height:370px;
+width: 450px;
 }
 }
 
@@ -227,8 +234,10 @@ padding: 10px 0px;
   width:30px;
   height:30px;
   @include media(tablet) {
-    top: 160px;
-    left: 190px;
+    // top: 160px;
+    // left: 190px;
+    top: 140px;
+    left: 170px;
     width:40px;
     height:40px;
   }
