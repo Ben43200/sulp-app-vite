@@ -1,6 +1,6 @@
 // import Card from "../../components/card/Card";
 // import {Cloudinary} from "@cloudinary/url-gen";
-// import Carousel from "../../components/carousel/Carousel";
+import Carousel from "../../components/carousel/Carousel";
 import { Link } from "react-router-dom";
 import { Carte } from "../../utils/map2.js";
 // import { stockData } from "../../utils/images";
@@ -28,9 +28,9 @@ function Home() {
       </div>
       </Link>
       
-      {/* <div className="carousel-container">
+      <div className="carousel-container">
         <Carousel />
-      </div> */}
+      </div>
       <Contact />
     </main>
   );
