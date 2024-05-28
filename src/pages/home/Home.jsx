@@ -25,7 +25,7 @@ function Home() {
       <Link to="https://maps.app.goo.gl/UBfWP5JLSstGKZf29" target="_blank" rel="noopener noreferrer">
       <div className="map-container">
         <img className="carte" src={Carte.carte} alt="carte" />
-        <img src={logo.logo1} className="logo-mini" alt="logo" />
+        {/* <img src={logo.logo1} className="logo-mini" alt="logo" /> */}
       </div></Link>
       
       <div className="carousel-container">
