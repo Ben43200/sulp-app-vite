@@ -113,7 +113,7 @@ header {
 //   // padding-top: 10px;
 // }
 
-.logo-1
+.logo-1,.logo-2
   {
     // width: 100%; /* Set initial width */
     // height: auto; /* Maintain aspect ratio */
@@ -125,7 +125,7 @@ header {
 
 }
 @media only screen and (min-width: 768px) {
-  .logo-1 {
+  .logo-1,.logo-2 {
       max-width: 60px; /* Set max-width for larger devices */
       // width: 100%; /* Set initial width */
       // height: auto; /* Maintain aspect ratio */
@@ -133,7 +133,7 @@ header {
 }
 
 @media only screen and (min-width: 1024px) {
-  .logo-1 {
+  .logo-1, .logo-2 {
       // max-width: 70px; /* Set max-width for even larger devices */
       width: 100%; /* Set initial width */
       height: auto; /* Maintain aspect ratio */
