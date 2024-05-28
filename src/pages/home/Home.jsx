@@ -2,7 +2,6 @@
 // import {Cloudinary} from "@cloudinary/url-gen";
 import Carousel from "../../components/carousel/Carousel";
 import { Link } from "react-router-dom";
-import  Google from "../../utils/google-map.png"
 import { Carte } from "../../utils/map2.js";
 // import { stockData } from "../../utils/images";
 import { useEffect } from "react";
