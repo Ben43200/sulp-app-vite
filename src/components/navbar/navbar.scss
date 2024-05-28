@@ -36,6 +36,7 @@ header {
   padding: 0 15px;
   display: flex;
   justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
 }
@@ -48,20 +49,31 @@ header {
 
 .navbar {
   height: 70px;
-  //   background-color: #fef7e5;
+    background-color:  #164f9d;
+  
   // background: linear-gradient(85deg, #352361 1%, rgb(64, 84, 178) 55%);
-  background: linear-gradient(85deg, #c1e4f1 1%, rgb(64, 84, 178) 55%);
+  // background: linear-gradient(85deg, #c1e4f1 1%, rgb(64, 84, 178) 55%);
+  // #131f53
 
   // grid-area: header;
   // width: 100vw;
 
   // position: fixed;
   width: 100%;
-  @include media(desktop) {
-    // width: 1240px;
-  }
+  // @include media(1025px) {
+  //   width: 1025px;
+  // }
 }
-
+.logo-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 100%;
+  z-index: 200;
+  // border: 2px solid black;
+  box-shadow: 4px 3px 5px black
+}
 //logo
 // .logo-1 {
 //   width: 15%;

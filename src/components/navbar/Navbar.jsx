@@ -31,19 +31,21 @@ const Navbar = () => {
   
     const menuItemsData = [
       { title: "Accueil", url: "" },
-      { title: "La micronutrition", url: "micronutrition" },
-      { title: "Puzzle de ma vie", url: "methodologie" },
-      { title: "Prestations", url: "services" },
-      { title: "Blog", url: "blog" },
+      { title: "Etude", url: "etude" },
+      { title: "Compétences", url: "competences" },
+      { title: "Tarifs", url: "tarifs" },
       { title: "Contact", url: "contact" },
     ];
-    const title = "ANNE CHRISTINE BRUNEL, diététicienne et micronutritionniste";
+    const title = "Maître Jean-François SULPICE, Notaire à Neuville-les-Dames";
   
     return (
       <header>
         <nav className="navbar">
           <div className="container">
-            <img src={logo.logo2} className="logo-1" alt="logo" />
+            <div className="logo-container">
+            <img src={logo.logo1} className="logo-1" alt="logo" />
+            <img src={logo.logo} className="logo-1" alt="logo" />
+            </div>
             <div className="menu-icon" onClick={handleShowNavbar}>
               <span className="burger-icon" ref={menuRef}>
                 <span></span>
