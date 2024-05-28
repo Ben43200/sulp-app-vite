@@ -1,9 +1,12 @@
 @import '../../css/mixinsandfunctions.scss';
 
 .carousel {
-    aspect-ratio: 335/255;
+    // aspect-ratio: 335/255;   essai suppression
 
-
+    // essai nouvelle valeur
+height: 275px;
+width: 100%;
+// fin nouvelle valeur
     // grid-area: carousel;
     display: grid;
     grid-template-areas:
@@ -19,8 +22,11 @@
         // aspect-ratio: 500/255;
     // aspect-ratio:400/255;
     // aspect-ratio:4/2;
-    aspect-ratio:46/25;
+    // aspect-ratio:46/25;  essai suppression
 
+        // margin-bottom: 20px;
+height:409px;
+width: 500px;
 
 
     
@@ -29,7 +35,7 @@
     @include media(desktop) {
         // aspect-ratio: 1240/415;
 
-    aspect-ratio:400/255;
+    // aspect-ratio:400/255;  essai suppression: ;
 
         // margin-bottom: 20px;
     }
