@@ -15,10 +15,10 @@ import Contact from "../../components/contact/Contact.jsx";
 function Home() {
   // console.log(logo.logo1);
   
-  useEffect(() => {
-    const img = new Image();
-    img.src = Carte.carte;
-}, []);
+//   useEffect(() => {
+//     const img = new Image();
+//     img.src = Carte.carte;
+// }, []);
 // console.log(Carte.carte)
  
   return (
