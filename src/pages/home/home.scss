@@ -12,34 +12,50 @@
   // color: white;
 }
 
-// body {
+ 
 #root {
   display: grid;
   grid-template-areas: " header " "main " "footer ";
-  grid-template-rows: auto 1fr auto;
+;
+  grid-template-rows: 160px 1fr auto;
   height: 100vh;
-  // row-gap: 20px;
   text-align: justify;
+  
   margin: 0;
-  padding: 0;
+  // @include media(desktop) {
+@media (min-width: 1240px) {
 
-  @include media(desktop) {
+
     // body {
     grid-template-areas:
-      " . header ."
+      " . header  . "
       "  . main .  "
       "footer footer footer ";
-    grid-template-columns: auto 1240px auto;
+    // grid-template-columns: auto 1240px auto;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 1240px 1fr;
+  max-width: 100vw;
+height: 100vh;
+
+
     padding: 0;
+  
+  @include media(desktop) {
+    // height: 100vh;
   }
 }
-
+}
 
 #root > header {
   grid-area: header;
 }
 #root > main {
   grid-area: main;
+  padding:20px 6px;
+  @include media (tablet){
+  padding:20px 2px;
+  }
+  
 }
 
 #root > footer {
@@ -48,58 +64,11 @@
 
 
 
-.box-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: stretch;
-  place-self: center;
-  box-shadow: 3px 3px 7px 2px #4054b2;
-  // width: 100%;
-  height: 300px;
-  border-radius: 10px;
-}
-@include media(tablet) {
-  .box-image {
-    // height: 500px;
-    width:auto;
-  }
-}
-
-// img{
-//   width:100%;
-//   height: 100%;
-// }
-
 h2{
     font-size:30px;
     // color: red;
     // margin-top: 400px;
 }
-
-// .logo-1{
-//   // height: 123px;
-//   // essai
-//   // width: 90px;
-//   // padding: 2px;
-// margin-bottom: 6px;
-// height: 100%;
-//   // fin essai
-//   // margin-top:7px;
-//   // border-right:2px solid black;
-// }
-// .logo-not{
-//   // height:80px;
-//   // essai 
-//   // width:80px;
-//   // width: 90px;
-//   // padding:2px;
-//   padding:9px;
-//   // padding-right:10p
-//   // // fin essai
-//   // // height:100%;
-//   // padding-top:10px;
-// }
 .logo-container{
   display: flex;
   align-items: center;
@@ -150,44 +119,8 @@ h2{
 }
 }
 
-.carte {
-  grid-area:carte;
-  align-self: center;
-  width:100%;
-  height: 100%;
-  height:200px;
-  // border-radius: 10px;
-  // width: fit-content;
-  box-shadow: 4px 3px 5px black;
-  @include media(tablet) {
-    height:275px;
-  }
 
-  @include media(desktop) {
-  // border-radius:25px;
-  height:350px;
-}
-}
 
-.map-container{
-  .carte {
-    grid-area: carte;
-    align-self: center;
-    width: 500px; // Largeur fixée à 500px
-    height: 600px; // Hauteur fixée à 600px
-    box-shadow: 4px 3px 5px black;
-    overflow: hidden;
-    
-    @include media(tablet) {
-      height: 275px; // Vous pouvez ajuster cette valeur si nécessaire
-    }
-  }
-}
-
-.leaflet-container {
-  width: 500px;
-  height: 600px;
-}
 
 
 
@@ -247,11 +180,7 @@ padding: 10px 0px;
  
 }
 
-.google-map{
-  @include media(desktop) {
-  grid-column: 1 / 3;
-}
-}
+
 
 
 #root >main >h1{
@@ -263,6 +192,24 @@ padding: 10px 0px;
 #root > main >p{
   font-weight: bold;
 }
+.map-container{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // height: 250px;
+  width: 100%;
 
-img{
+  // border: 2px solid black;
+  // border-radius: 10px;
+  box-shadow: 4px 3px 5px black;
+  @include media(tablet) {
+    // border-radius:25px;
+    height: 409px;
+    width:500px;
+  }
 }
+// .carte{
+//  height: 250px
+// }
+
