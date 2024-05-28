@@ -8,6 +8,7 @@ import { Carte } from "../../utils/map2.js";
 
 
 import "./home.scss";
+import Contact from "../../components/contact/Contact.jsx";
 
 // import MyMapComponent from "../../components/mymap/MyMap.jsx";
 function Home() {
@@ -30,6 +31,7 @@ function Home() {
       </div>
       <div className="carousel-container">
         <Carousel />
+        <Contact />
       </div>
     </main>
   );
