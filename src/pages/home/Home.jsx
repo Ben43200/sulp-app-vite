@@ -14,10 +14,12 @@ import Contact from "../../components/contact/Contact.jsx";
 // import MyMapComponent from "../../components/mymap/MyMap.jsx";
 function Home() {
   console.log(logo.logo1);
+  
   useEffect(() => {
     const img = new Image();
-    img.src = Carte;
+    img.src = Carte.carte;
 }, []);
+console.log(Carte.carte)
  
   return (
     <main className="home-container">
