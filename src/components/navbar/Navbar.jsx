@@ -6,7 +6,7 @@ import "./navbar.scss"
 
 const Navbar = () => {
     const [showNavbar, setShowNavbar] = useState(false);
-    console.log(logo.logo2);
+    // console.log(logo.logo2);
     let menuRef = useRef();
   
     const handleShowNavbar = () => {
