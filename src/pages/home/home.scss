@@ -209,7 +209,13 @@ padding: 10px 0px;
     width:500px;
   }
 }
-// .carte{
-//  height: 250px
-// }
+.carte{
+ height:275px;
+ width: 100%;
+ @include media(tablet) {
+  // border-radius:25px;
+  height: 409px;
+  width:500px;
+}
+}
 
