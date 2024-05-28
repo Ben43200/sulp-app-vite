@@ -69,7 +69,7 @@ const Navbar = () => {
           </div>
         </nav>
         <div className="title-container">
-          <p className="title">{title}</p>
+          <h1 className="title">{title}</h1>
         </div>
       </header>
     );
