@@ -57,11 +57,17 @@ import "./carousel.scss";
 import { useState, useEffect } from "react";
 
 export default function Carousel() {
+    // const images = [
+    //     "https://res.cloudinary.com/dtvojwz5j/image/upload/v1712065617/wsbufvd3hvewu5br9i36.webp",
+    //     "https://res.cloudinary.com/dtvojwz5j/image/upload/v1712065858/sdtjfxobasg9frfhi4i2.webp",
+    //     "https://res.cloudinary.com/dtvojwz5j/image/upload/v1712065872/udgafo6ckulygh28dy4x.webp",
+    // ];
+
     const images = [
-        "https://res.cloudinary.com/dtvojwz5j/image/upload/v1712065617/wsbufvd3hvewu5br9i36.webp",
-        "https://res.cloudinary.com/dtvojwz5j/image/upload/v1712065858/sdtjfxobasg9frfhi4i2.webp",
-        "https://res.cloudinary.com/dtvojwz5j/image/upload/v1712065872/udgafo6ckulygh28dy4x.webp",
-    ];
+        "/Façade_1.webp",
+        "/Bureau_1.webp",
+        "/Salle_d_attente_2.webp",
+    ]
     const [position, setPosition] = useState(0);
     //laisser le useEffect pour le chargement des images pour score page speedinsight
     useEffect(() => {
