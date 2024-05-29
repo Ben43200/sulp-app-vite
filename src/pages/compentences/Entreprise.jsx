@@ -4,6 +4,9 @@ import MenuCompetences from "../../components/menuCompetences/MenuCompetences.js
 
 
 export default function Entreprise(){
+    const Business = [
+        "group-people-working-out-business-plan-office.webp"
+    ]
     return(
         <main>
             <MenuCompetences />
@@ -13,7 +16,7 @@ export default function Entreprise(){
 projet, rédaction des statuts, mais aussi rédaction des baux commerciaux, mise en place de location-
 gérance ou encore vente de fonds de commerce.</p>
 <div className="img-container">
-{/* <img className="img-comp" src={Business} alt="cute-familly"/> */}
+<img className="img-comp" src={Business} alt="cute-familly"/>
 </div>
         </main>
     )
