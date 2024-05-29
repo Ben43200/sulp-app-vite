@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import Footer from "./components/footer/Footer";
 // import Tarifs from "./pages/Tarifs/Tarifs";
 // import Error from "./pages/Error/Error";
-// import Famille from "./pages/Competences/Famille/Famille";
-// import Patrimoine from "./pages/Competences/Patrimoine/Patrimoine";
+import Famille from "./pages/compentences/famille/Famille";
+import Patrimoine from "./pages/compentences/patrimoine/Patrimoine";
 // import Immobilier from "./pages/Competences/Immobilier/Immobilier";
 // import Entreprise from "./pages/Competences/Entreprise/Entreprise";
 // import Expertise from "./pages/Competences/Expertise/Expertise";
@@ -34,11 +34,11 @@ root.render(
     <Route path="/" element={<Home />} />
 <Route path="/competences" element={<Competences />} />
 {/* <Route path="/tarifs" element={<Tarifs />} />
-<Route path="/etude" element={<Etude />} />
+<Route path="/etude" element={<Etude />} />*/}
 
 <Route path="/famille" element={<Famille />} />
 <Route path="/patrimoine" element={<Patrimoine />} />
-<Route path="/immobilier" element={<Immobilier />} />
+{/* <Route path="/immobilier" element={<Immobilier />} />
 <Route path="/entreprise" element={<Entreprise />} />
 <Route path="/expertise" element={<Expertise />} />
 <Route path="/mentionslegales" element={<MentionsLegales />} />

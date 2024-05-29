@@ -34,7 +34,7 @@ const Navbar = () => {
     const menuItemsData = [
       { title: "Accueil", url: "" },
       { title: "Etude", url: "etude" },
-      { title: "Compétences", url: "competences" },
+      { title: "Compétences", url: "competences", subMenu: ['/Famille', '/Patrimoine', '/Immobilier', '/Entreprise', '/Expertise'] },
       { title: "Tarifs", url: "tarifs" },
       { title: "Contact", url: "contact" },
     ];
@@ -56,18 +56,21 @@ const Navbar = () => {
               </span>
             </div>
             <div className={`nav-elements  ${showNavbar && "active"}`}>
-              <ul className="menus">
-                {menuItemsData.map((menu, index) => {
-                  return (
-                    <li className="menu-items" key={index}>
-                      <NavLink to={`/${menu.url}`} onClick={closeAndTop} className={location.pathname === `/${menu.url}` ? 'active' : ''}>
-                        {menu.title}
-                      </NavLink>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
+  <ul className="menus">
+  {menuItemsData.map((menu, index) => {
+  const isActive = menu.url === '' 
+    ? location.pathname === '/' 
+    : location.pathname === `/${menu.url}` || (menu.subMenu && menu.subMenu.includes(location.pathname));
+  return (
+    <li className={`menu-items ${isActive ? 'active' : ''}`} key={index}>
+      <NavLink to={`/${menu.url}`} onClick={closeAndTop}>
+        {menu.title}
+      </NavLink>
+    </li>
+  );
+})}
+  </ul>
+</div>
           </div>
         </nav>
         <div className="title-container">

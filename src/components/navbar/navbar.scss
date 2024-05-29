@@ -29,7 +29,19 @@ header {
     //fin essai
 // }
 
-
+.menu-items.active::after{
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: auto;
+  height: 2px;
+  //   background-color: #574c4c;
+  background-color: #86b98b;
+}
+// .menu-items.active {
+//   color: inherit; // ou une autre couleur que vous voulez pour les éléments de menu actifs
+// }
 
 header {
   position: fixed;

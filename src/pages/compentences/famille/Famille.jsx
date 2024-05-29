@@ -1,7 +1,7 @@
 import React from "react";
-import MenuCompetences from "../../../components/MenuCompetences/MenuCompetences";
+import MenuCompetences from "../../../components/menuCompetences/MenuCompetences";
 import "./famille.scss";
-import Familly from "../../../Utils/cute-family-playing-summer-field.jpg";
+// import Familly from "../../../Utils/cute-family-playing-summer-field.jpg";
 import Paragraph from "../../../components/Paragraph.jsx";
 export default function Famille() {
   return (
@@ -31,7 +31,7 @@ export default function Famille() {
         situation : indivision, SCI, démembrement croisé ou tontine.
       </Paragraph>
       <div className="img-container">
-        <img className="img-comp" src={Familly} alt="cute-familly" />
+        {/* <img className="img-comp" src={Familly} alt="cute-familly" /> */}
       </div>
       {/* 
 <ul>
