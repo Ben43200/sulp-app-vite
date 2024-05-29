@@ -11,7 +11,7 @@ export default function MentionsLegales() {
       <p className="mentions-details">
         Éditeur : le Site est conçu par Benjamin Dollfus, micro-entrepreneur,
         Immatriculé sous le n° Siret 514 925 866 000 48 - Code APE 6201Z - 8B
-        rue des Jardins 26400 Aouste-sur-sye. Tél. 06.98.55.70.26  <Link to="https://meteoben.com/" target="_blank"  rel="noreferrer">https://meteoben.com/</Link>
+        rue des Jardins 26400 Aouste-sur-sye. Tél. 06.69.49.98.75  <Link to="https://meteoben.com/" target="_blank"  rel="noreferrer">https://meteoben.com/</Link>
       </p>
       <h3 className="mentions-subtitle">2. Infos Hébergeur</h3>
       <p className="mentions-details">
@@ -119,6 +119,7 @@ export default function MentionsLegales() {
         <li>©Jean-François Sulpice</li>
         <li>©Benjamin Dollfus</li>
         <li>©Freepik</li>
+        <li>la carte d'origine provient de wikimedia commons auteur ©Chabe01</li>
       </ul>
       <h4 className="mentions-subtitle">6. Inquiétudes</h4>
       <p>
