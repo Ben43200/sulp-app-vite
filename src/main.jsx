@@ -1,41 +1,22 @@
-// import React from 'react'
-// import ReactDOM from 'react-dom/client'
-// import App from './App.jsx'
-// import './index.css'
-
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-// )
-
-
-
-
-
-
-// import React from "react";
 import { BrowserRouter,  Routes, Route,  } from "react-router-dom";
 import ReactDOM from "react-dom/client";
-// import Navbar from "./components/Navbar/Navbar";
-// import Methodologie from "./pages/Methodologie/Methodologie";
-// import Mission from "./pages/Mission/Mission";
-
 import Footer from "./components/footer/Footer";
-// import ScrollToTop from "./components/ScrollToTop";
-// import Service from "./pages/Services/Services";
-// import Realisations from "./pages/Realisations";
-// import ContactPage from "./pages/ContactPage/ContactPage";
-
-// import Error from "./pages/error/Error";
+// import Tarifs from "./pages/Tarifs/Tarifs";
+// import Error from "./pages/Error/Error";
+// import Famille from "./pages/Competences/Famille/Famille";
+// import Patrimoine from "./pages/Competences/Patrimoine/Patrimoine";
+// import Immobilier from "./pages/Competences/Immobilier/Immobilier";
+// import Entreprise from "./pages/Competences/Entreprise/Entreprise";
+// import Expertise from "./pages/Competences/Expertise/Expertise";
+// import MentionsLegales from "./pages/MentionsLegales/MentionsLegales"
+// import ContactPage from "./pages/Contact/ContactPage";
+// import Etude from "./pages/Etude/Etude";
 
 
 import Home from "./pages/home/Home";
 import Navbar from "./components/navbar/Navbar";
-// import Contact from "./pages/contact/Contact";
+import Competences from "./pages/compentences/Competences.jsx";
 
-// import Footer from "./components/footer/Footer";
-// import Mission  from "./pages/mission/Mission";
 
 
 
@@ -50,23 +31,21 @@ root.render(
     <Navbar />
 
     <Routes>
-      <Route path="/" element={<Home />} />
-      {/* <Route path="/mission" element={<Mission />} /> */}
-      {/* <Route path="/methodologie" element={<Methodologie />} />
-      <Route path="/mission" element={<Mission />} />
-      <Route path="/services" element={<Service />} />
-      <Route path="/realisations" element={<Realisations />} />
-      <Route path="/contact" element={<ContactPage />} />
+    <Route path="/" element={<Home />} />
+<Route path="/competences" element={<Competences />} />
+{/* <Route path="/tarifs" element={<Tarifs />} />
+<Route path="/etude" element={<Etude />} />
 
-      <Route path="*" element={<Error />} /> */}
-
-{/* <Route path="/contact" element={<Contact />} /> */}
-
-
+<Route path="/famille" element={<Famille />} />
+<Route path="/patrimoine" element={<Patrimoine />} />
+<Route path="/immobilier" element={<Immobilier />} />
+<Route path="/entreprise" element={<Entreprise />} />
+<Route path="/expertise" element={<Expertise />} />
+<Route path="/mentionslegales" element={<MentionsLegales />} />
+<Route path="/contactpage" element={<ContactPage />} />
+<Route path="*" element={<Error />} /> */}
 </Routes>
     <Footer />
-
-  {/* </Router> */}
   </BrowserRouter>
 
   // </React.StrictMode>
