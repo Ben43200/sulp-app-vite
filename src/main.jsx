@@ -16,6 +16,7 @@ import Patrimoine from "./pages/compentences/patrimoine/Patrimoine";
 import Home from "./pages/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import Competences from "./pages/compentences/Competences.jsx";
+import MenuCompetences from "./components/menuCompetences/MenuCompetences.jsx";
 
 
 
@@ -33,6 +34,7 @@ root.render(
     <Routes>
     <Route path="/" element={<Home />} />
 <Route path="/competences" element={<Competences />} />
+<Route path="/comepetences/menucompetences/:id" element={<MenuCompetences />} />
 {/* <Route path="/tarifs" element={<Tarifs />} />
 <Route path="/etude" element={<Etude />} />*/}
 

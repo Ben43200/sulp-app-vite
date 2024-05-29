@@ -2,11 +2,13 @@ import { useState, useEffect, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { logo } from "../../utils/logo.js";
 import "./navbar.scss"
+import { useParams } from "react-router-dom";
 
 
 const Navbar = () => {
     const [showNavbar, setShowNavbar] = useState(false);
     const location = useLocation();
+    const { id } = useParams();
     // console.log(logo.logo2);
     let menuRef = useRef();
   
@@ -60,7 +62,7 @@ const Navbar = () => {
   {menuItemsData.map((menu, index) => {
   const isActive = menu.url === '' 
     ? location.pathname === '/' 
-    : location.pathname === `/${menu.url}` || (menu.subMenu && menu.subMenu.includes(location.pathname));
+    : location.pathname === `/${menu.url}` || (menu.subMenu && menu.subMenu.includes(id));
   return (
     <li className={`menu-items ${isActive ? 'active' : ''}`} key={index}>
       <NavLink to={`/${menu.url}`} onClick={closeAndTop}>

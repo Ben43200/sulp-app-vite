@@ -3,6 +3,7 @@ import './menucompetences.scss';
 
 const MenuCompetences = () => {
   const location = useLocation();
+//   const blogitem = BLOGDATAS.find(blogitem => String(blogitem.id) === id);
 
   return (
     <ul className="menu-comp">
