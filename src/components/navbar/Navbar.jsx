@@ -38,7 +38,7 @@ const Navbar = () => {
       { title: "Etude", url: "etude" },
       { title: "Compétences", url: "famille", subMenu: ['/Famille', '/Patrimoine', '/Immobilier', '/Entreprise', '/Expertise'] },
       { title: "Tarifs", url: "tarifs" },
-      { title: "Contact", url: "contact" },
+      { title: "Contact", url: "contactpage" },
     ];
     const title = "Maître Jean-François SULPICE, Notaire à Neuville-les-Dames";
   

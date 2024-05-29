@@ -11,7 +11,7 @@ import Immobilier from "./pages/compentences/Immobilier.jsx";
 import Entreprise from "./pages/compentences/Entreprise.jsx";
 import Expertise from "./pages/compentences/Expertise.jsx";
 // import MentionsLegales from "./pages/MentionsLegales/MentionsLegales"
-// import ContactPage from "./pages/Contact/ContactPage";
+import ContactPage from "./pages/contact/ContactPage";
 import Etude from "./pages/etude/Etude";
 
 
@@ -45,9 +45,9 @@ root.render(
  <Route path="/immobilier" element={<Immobilier />} />
  <Route path="/entreprise" element={<Entreprise />} />
 <Route path="/expertise" element={<Expertise />} />
-{/* <Route path="/mentionslegales" element={<MentionsLegales />} />
+{/* {/* <Route path="/mentionslegales" element={<MentionsLegales />} /> */}
 <Route path="/contactpage" element={<ContactPage />} />
-<Route path="*" element={<Error />} /> */}  
+{/* <Route path="*" element={<Error />} />    */}
 </Routes>
     <Footer />
   </BrowserRouter>

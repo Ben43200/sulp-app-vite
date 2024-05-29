@@ -1,0 +1,90 @@
+
+@import "../../css/mixinsandfunctions.scss";   
+
+.contact-page-container{
+    display: grid;
+    row-gap:20px;
+    @include media(tablet) {
+    display:grid;
+        
+        
+    grid-template-columns: 1fr;
+    gap:20px;
+        display: grid;
+        gap: 20px;
+        @include media(desktop) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+}
+}
+
+.contact-container >p{
+    padding:4px 2px;
+}
+
+
+
+.left-column{
+    display: flex;
+    row-gap:20px;
+    flex-direction: column;
+}
+
+.right-column{
+    display: flex;
+    flex-direction: column; 
+    row-gap:20px; 
+     @include media(tablet) {
+    justify-content: space-around;
+@include media(desktop) {
+    justify-content: space-between;
+}
+
+}
+}
+    
+
+.horaires-container{
+    background-color:#131f53;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+  box-shadow: 4px 3px 5px black;
+
+    padding: 4rem 0rem;
+    @include media(desktop) {
+    
+        padding: 5.9rem;
+    
+}
+}
+
+
+.contact-title{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    font-size:1.2rem;
+    @include media(desktop) {
+padding-top:9rem;
+font-size:2rem;
+
+    }
+}
+
+
+
+.horaires-container >h2{
+    padding-bottom:1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.horaires-container  >p{
+    padding: 4px;
+}
