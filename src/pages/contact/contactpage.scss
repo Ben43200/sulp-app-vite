@@ -4,8 +4,17 @@
 .contact-page-container{
     display: grid;
     row-gap:20px;
+    grid-template-areas: "carte"
+    "contact"
+    "title "
+    "horaires";
+    grid-template-columns: 1fr;
     @include media(tablet) {
     display:grid;
+    grid-template-areas: "carte"
+                        " contact"
+                        "title "
+                        "horaires";
         
         
     grid-template-columns: 1fr;
@@ -13,7 +22,11 @@
         display: grid;
         gap: 20px;
         @include media(desktop) {
-            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "carte title"
+            " contact horaires";
+
+
+grid-template-columns: 1fr 1fr;
         }
 
 }
@@ -54,6 +67,7 @@
     align-items: center;
     width:100%;
   box-shadow: 4px 3px 5px black;
+  grid-area: horaires;  
 
     padding: 4rem 0rem;
     @include media(desktop) {
@@ -70,13 +84,19 @@
     align-items: center;
     color:black;
     font-size:1.2rem;
+    grid-area: title;
     @include media(desktop) {
-padding-top:9rem;
+// padding-top:9rem;
 font-size:2rem;
 
     }
 }
 
+.card-link{
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+}
 
 
 .horaires-container >h2{
@@ -88,3 +108,12 @@ font-size:2rem;
 .horaires-container  >p{
     padding: 4px;
 }
+
+.contact-container{
+    grid-area: contact;
+}
+.map-container{
+    grid-area: carte;
+}
+
+

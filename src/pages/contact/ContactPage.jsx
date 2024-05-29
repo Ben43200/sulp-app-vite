@@ -8,14 +8,13 @@ import { Carte } from "../../utils/map2.js";
 export default function ContactPage(){
     return(
         <main className="contact-page-container">
-               <Link to="https://maps.app.goo.gl/UBfWP5JLSstGKZf29" target="_blank" rel="noopener noreferrer">
+               <Link className="card-link" to="https://maps.app.goo.gl/UBfWP5JLSstGKZf29" target="_blank" rel="noopener noreferrer">
       <div className="map-container">
         <img className="carte" src={Carte.carte} alt="carte" />
         <img src={logo.logo1} className="logo-mini" alt="logo" />
       </div>
       </Link>
-            <Contact />
-            <aside className="right-column">
+   <Contact />
     <div className="contact-title">
   <h1>N'hésitez pas à contacter votre notaire</h1>
   </div>
@@ -28,7 +27,6 @@ export default function ContactPage(){
     <p>Vendredi 9h-12h / 14h-18h</p>
     <p>Samedi sur rendez-vous</p>
   </div>
-  </aside>
         </main>
     )
     }
