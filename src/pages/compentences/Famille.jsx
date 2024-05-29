@@ -1,8 +1,8 @@
 import React from "react";
-import MenuCompetences from "../../../components/menuCompetences/MenuCompetences";
+import MenuCompetences from "../../components/menuCompetences/MenuCompetences.jsx";
 import "./famille.scss";
 // import Familly from "../../../Utils/cute-family-playing-summer-field.jpg";
-import Paragraph from "../../../components/Paragraph.jsx";
+import Paragraph from "../../components/Paragraph.jsx";
 export default function Famille() {
   return (
     <main>
