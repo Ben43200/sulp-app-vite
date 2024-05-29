@@ -1,11 +1,12 @@
 import { useState, useEffect, useRef } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { logo } from "../../utils/logo.js";
 import "./navbar.scss"
 
 
 const Navbar = () => {
     const [showNavbar, setShowNavbar] = useState(false);
+    const location = useLocation();
     // console.log(logo.logo2);
     let menuRef = useRef();
   
@@ -59,7 +60,7 @@ const Navbar = () => {
                 {menuItemsData.map((menu, index) => {
                   return (
                     <li className="menu-items" key={index}>
-                      <NavLink to={`/${menu.url}`} onClick={closeAndTop}>
+                      <NavLink to={`/${menu.url}`} onClick={closeAndTop} className={location.pathname === `/${menu.url}` ? 'active' : ''}>
                         {menu.title}
                       </NavLink>
                     </li>
