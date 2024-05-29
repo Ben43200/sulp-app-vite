@@ -36,7 +36,7 @@ const Navbar = () => {
     const menuItemsData = [
       { title: "Accueil", url: "" },
       { title: "Etude", url: "etude" },
-      { title: "Compétences", url: "competences", subMenu: ['/Famille', '/Patrimoine', '/Immobilier', '/Entreprise', '/Expertise'] },
+      { title: "Compétences", url: "famille", subMenu: ['/Famille', '/Patrimoine', '/Immobilier', '/Entreprise', '/Expertise'] },
       { title: "Tarifs", url: "tarifs" },
       { title: "Contact", url: "contact" },
     ];
