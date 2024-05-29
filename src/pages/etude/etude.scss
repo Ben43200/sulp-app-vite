@@ -1,0 +1,29 @@
+@import "../../css/mixinsandfunctions.scss";
+
+
+
+.etude-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  font-weight: bold;
+}
+
+
+.etude-container >img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.presentation-title{
+  font-size:50px;
+  margin:0;
+}
+.presentation-list{
+  padding: 10px;
+}
+.presentation-list > li{
+padding: 10px 0px;
+
+}

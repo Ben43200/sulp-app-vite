@@ -2,6 +2,9 @@ import React from "react";
 import MenuCompetences from "../../components/menuCompetences/MenuCompetences.jsx";
 // import House from "../../../Utils/modern-residential-district-with-green-roof-balcony-generated-by-ai.jpg";
 export default function Immobilier() {
+    const House = [
+        "modern-residential-district-with-green-roof-balcony-generated-by-ai.webp"
+    ]
   return (
     <main>
       <MenuCompetences />
@@ -17,7 +20,7 @@ export default function Immobilier() {
         public ou privé.
       </p>
       <div className="img-container">
-        {/* <img className="img-comp" src={House} alt="House" /> */}
+        <img className="img-comp" src={House} alt="House" />
       </div>
     </main>
   );

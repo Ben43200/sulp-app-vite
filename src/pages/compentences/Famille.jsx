@@ -4,6 +4,9 @@ import "./famille.scss";
 // import Familly from "../../../Utils/cute-family-playing-summer-field.jpg";
 import Paragraph from "../../components/Paragraph.jsx";
 export default function Famille() {
+  const Familly = [
+    "cute-family-playing-summer-field.webp"
+  ]
   return (
     <main>
       <MenuCompetences />
@@ -31,7 +34,7 @@ export default function Famille() {
         situation : indivision, SCI, démembrement croisé ou tontine.
       </Paragraph>
       <div className="img-container">
-        {/* <img className="img-comp" src={Familly} alt="cute-familly" /> */}
+        <img className="img-comp" src={Familly} alt="cute-familly" />
       </div>
       {/* 
 <ul>

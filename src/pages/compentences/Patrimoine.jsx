@@ -3,6 +3,7 @@ import MenuCompetences from "../../components/menuCompetences/MenuCompetences";
 // import Money from "../../../Utils/gold-coin-hourglass-time-is-money-concept.jpg";
 // import Paragraph from "../../../components/Paragraph.jsx";
 export default function Patrimoine() {
+  const Money = [ "gold-coin-hourglass-time-is-money-concept.webp" ];
   return (
     <main>
       <MenuCompetences />
@@ -22,7 +23,7 @@ export default function Patrimoine() {
         projets.
       </p>
       <div className="img-container">
-        {/* <img className="img-comp" src={Money} alt="Patrimoine" /> */}
+        <img className="img-comp" src={Money} alt="Patrimoine" />
       </div>
     </main>
   );

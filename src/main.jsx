@@ -1,7 +1,9 @@
+
+// ...
 import { BrowserRouter,  Routes, Route,  } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import Footer from "./components/footer/Footer";
-// import Tarifs from "./pages/Tarifs/Tarifs";
+import Tarifs from "./pages/tarifs/Tarifs";
 // import Error from "./pages/Error/Error";
 import Famille from "./pages/compentences/Famille";
 import Patrimoine from "./pages/compentences/Patrimoine";
@@ -10,7 +12,8 @@ import Entreprise from "./pages/compentences/Entreprise.jsx";
 import Expertise from "./pages/compentences/Expertise.jsx";
 // import MentionsLegales from "./pages/MentionsLegales/MentionsLegales"
 // import ContactPage from "./pages/Contact/ContactPage";
-// import Etude from "./pages/Etude/Etude";
+import Etude from "./pages/etude/Etude";
+
 
 
 import Home from "./pages/home/Home";
@@ -32,9 +35,9 @@ root.render(
 
     <Routes>
     <Route path="/" element={<Home />} />
-{/* <Route path="/comepetences/menucompetences/:id" element={<MenuCompetences />} /> */}
-{/* <Route path="/tarifs" element={<Tarifs />} />
-<Route path="/etude" element={<Etude />} />*/}
+{/* {/* <Route path="/comepetences/menucompetences/:id" element={<MenuCompetences />} /> */}
+<Route path="/tarifs" element={<Tarifs />} />
+<Route path="/etude" element={<Etude />} />
 
 <Route path="/famille" element={<Famille />} />
 <Route path="/patrimoine" element={<Patrimoine />} />

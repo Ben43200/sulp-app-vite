@@ -4,6 +4,8 @@ import MenuCompetences from "../../components/menuCompetences/MenuCompetences.js
 
 
 export default function Expertise(){
+ const Expert = [
+     "business-people-signing-contract.webp"]
     return(
         <main>
             <MenuCompetences />
@@ -20,7 +22,7 @@ de donation ou de succession.</p>
 conduits à présenter au tribunal, dans le cadre de la vente d’un bien d’une personne sous tutelle, par
 exemple.</p>
 <div className="img-container">
-{/* <img className="img-comp" src={Expert} alt="Expertise"/> */}
+<img className="img-comp" src={Expert} alt="Expertise"/>
 </div>
         </main>
     )
