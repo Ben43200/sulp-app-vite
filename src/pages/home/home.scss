@@ -222,7 +222,12 @@ width: 450px;
 .carte{
  height:275px;
  width: 100%;
- @include media(tablet) {
+   //ancien code
+  // @include media(tablet) {
+//fin ancien code
+//début nouveau code
+@media (min-width: 852px) {
+  //fin nouveau code
   // border-radius:25px;
   // height: 409px;
   // width:500px;
@@ -238,7 +243,12 @@ width: 450px;
   left:135px;
   width:30px;
   height:30px;
-  @include media(tablet) {
+  //ancien code
+  // @include media(tablet) {
+//fin ancien code
+//début nouveau code
+@media (min-width: 852px) {
+  //fin nouveau code
     // top: 160px;
     // left: 190px;
     top: 140px;
