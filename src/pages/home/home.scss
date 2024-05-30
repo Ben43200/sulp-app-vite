@@ -281,3 +281,14 @@ width: 450px;
 h3{
   font-weight: 700;
 }
+
+
+@keyframes clickable {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.map-container:active {
+  animation: clickable 0.5s;
+}

@@ -1,10 +1,6 @@
-// import Card from "../../components/card/Card";
-// import {Cloudinary} from "@cloudinary/url-gen";
 import Carousel from "../../components/carousel/Carousel";
 import { Link } from "react-router-dom";
 import { Carte } from "../../utils/map2.js";
-// import { stockData } from "../../utils/images";
-import { useEffect } from "react";
 import { logo } from "../../utils/logo.js";
 // const Carousel = lazy(() => import('../../components/carousel/Carousel')); 
 
