@@ -166,3 +166,15 @@ width: 500px;
   .carousel-image.active {
     opacity: 1;
   }
+
+
+  .carousel-container {
+    // width: 100%; // Par défaut, le conteneur prend toute la largeur disponible
+width: 100%;
+@media (min-width: 480px) {
+    width: 409px; // Sur les petits écrans, le conteneur prend également toute la largeur disponible
+}
+@include media(tablet) {
+        width: 500px// Sur les petits écrans, le conteneur prend également toute la largeur disponible
+    }
+}

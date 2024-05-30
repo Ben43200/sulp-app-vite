@@ -31,15 +31,6 @@ export default function Carousel() {
     }, [images.length]);
 
     return (
-        // <div className="carousel">
-        //     {/* <img src={`${images[position]}`} alt="carousel" /> */}
-        //     <img className={`carousel-image ${index === position ? 'active' : ''}`} src={`${images[position]}`} alt="carousel" />
-        //     <div className="carousel-indicators">
-        //         {images.map((_, index) => (
-        //             <span key={index} className={`carousel-indicator ${index === position ? 'active' : ''}`}/>
-        //         ))}
-        //     </div>
-        // </div>
         <div className="carousel">
         {images.map((image, index) => (
             <img 
