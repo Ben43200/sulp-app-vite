@@ -154,3 +154,15 @@ width: 500px;
         }
     }
 }
+
+
+
+.carousel-image {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute; // Pour superposer les images
+  }
+  
+  .carousel-image.active {
+    opacity: 1;
+  }
