@@ -9,9 +9,9 @@ export default function Footer() {
       <p>©Meteoben</p>
       <NavLink to="/MentionsLegales">Mentions légales</NavLink>
       <div className="notaires-link-container">
-        <h4 className="notaires-link-title">
+        <h3 className="notaires-link-title">
           LES NOTAIRES DE FRANCE SUR LE WEB
-        </h4>
+        </h3>
         <ul>
           <li className="link">
             <span className="arrow-right-link"></span>
