@@ -204,7 +204,12 @@ padding: 10px 0px;
   // border: 2px solid black;
   // border-radius: 10px;
   box-shadow: 4px 3px 5px black;
-  @include media(tablet) {
+  //ancien code
+  // @include media(tablet) {
+//fin ancien code
+//début nouveau code
+    @media (min-width: 852px) {
+//fin nouveau code
     // border-radius:25px;
     // height: 409px;
    
